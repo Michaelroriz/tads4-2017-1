@@ -19,71 +19,77 @@
 
             });
         </script>
-        
+
     </head>
-    <body>
+    <body >
         <!--  Ver https://github.com/h5bp/html5-boilerplate para outras configurações -->
-     <div class="container">
-        <nav class="navbar navbar-default">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="#">
-                        <img src="./img/logo.png" alt="Logotipo da Cake Web" title="Cake Web" style="height: 30px" /> 
-                    </a>
+        <div class="container">
+            <nav class="navbar navbar-default" >
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button id="menu-toggle" type="button" class="navbar-toggle toggled" data-toggle="collapse" data-target="#example">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar bar1"></span>
+                            <span class="icon-bar bar2"></span>
+                            <span class="icon-bar bar3"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">
+                            <img src="./img/logo.png" alt="Logotipo da Cake Web" title="Cake Web" style="height: 30px" /> 
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-right navbar-uppercase">
+                            <li><a href="#" data-scroll="true" >Sobre</a></li>
+                            <li><a href="#" data-scroll="true" >Principal</a></li>
+                            <li><a href="#" data-scroll="true" >Produtos</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Principal</a></li>
-                        <li><a href="#">Produtos</a></li>
-                    </ul>
+            </nav>
+
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active text-center">
+                        <img src="./img/bolo3.jpg" style="height: 400px" />
+                    </div>
+                    <div class="item text-center">
+                        <img src="./img/bolo9.jpg" style="height: 400px" />
+                    </div>
+                    <div class="item text-center">
+                        <img src="./img/bolo11.jpg" style="height: 400px" />
+                    </div>
+                    <div class="item text-center">
+                        <img src="./img/bolo12.jpg" style="height: 400px" />
+                    </div>
                 </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Próximo</span>
+                </a>
             </div>
-        </nav>
 
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-            </ol>
+            <!--
+            <section id="destaques" class="jumbotron">
+              <img src="./img/bolo1.jpg" />
+            </section>
+            -->
 
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-                <div class="item active text-center">
-                    <img src="./img/bolo3.jpg" style="height: 400px" />
-                </div>
-                <div class="item text-center">
-                    <img src="./img/bolo9.jpg" style="height: 400px" />
-                </div>
-                <div class="item text-center">
-                    <img src="./img/bolo11.jpg" style="height: 400px" />
-                </div>
-                <div class="item text-center">
-                    <img src="./img/bolo1.jpg" style="height: 400px" />
-                </div>
-            </div>
 
-            <!-- Controls -->
-            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Anterior</span>
-            </a>
-            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Próximo</span>
-            </a>
-        </div>
-
-        <!--
-        <section id="destaques" class="jumbotron">
-          <img src="./img/bolo1.jpg" />
-        </section>
-        -->
-
-       
             <div class="row">
                 <div id="content" class="col-md-12" role="main">
                     <article class="pot-7 page type-page status-publish has-post-thumbnail hentry" id="sobreprincipal">
@@ -97,14 +103,14 @@
                                         <div class="col-xs-12 col-sm-6 col-md-4 cs-section-item margin-bottom">
                                             <article class="cs-module w-12">
                                                 <div class="imagem">
-                                                    <img src="./img/bolo10.jpg" style="height: 175px; width: 250px"/>
+                                                    <img src="./img/bolo13.png" style="height: 175px; width: 250px"/>
 
                                                 </div>
                                                 <div class="descricao">
                                                     <h4>
-                                                        <a href="#">Descrição A</a>
+                                                        <a href="#">Bolo c/ Cerejas e Damasco</a>
                                                     </h4> 
-                                                    <h6>Subdescricao</h6>
+                                                    <h6>Bolo branco com chantily, cereja, damasco e caramelizado sabor maracujá</h6>
                                                     <br>
                                                 </div>
                                             </article>
@@ -186,9 +192,9 @@
                                                 </div>
                                                 <div class="descricao">
                                                     <h4>
-                                                        <a href="#">Descrição G</a>
+                                                        <a href="#">Bolo de Fubá</a>
                                                     </h4> 
-                                                    <h6>Subdescricao</h6>
+                                                    <h6>Bolo gelado caramelizado de fuba</h6>
                                                 </div>
                                             </article>
                                         </div>
@@ -199,9 +205,9 @@
                                                 </div>
                                                 <div class="descricao">
                                                     <h4>
-                                                        <a href="#">Descrição H</a>
+                                                        <a href="#">Bolo coberto de Chocolate</a>
                                                     </h4> 
-                                                    <h6>Subdescricao</h6>
+                                                    <h6>Bolo recheado de prestígio com com cobertura de chocolate cremoso</h6>
                                                 </div>
                                             </article>
                                         </div>
@@ -212,22 +218,22 @@
                                                 </div>
                                                 <div class="descricao">
                                                     <h4>
-                                                        <a href="#">Descrição I</a>
+                                                        <a href="#">Bolo de Natal</a>
                                                     </h4> 
-                                                    <h6>Subdescricao</h6>
+                                                    <h6>Bolo c/ cobertura de chocolate e pedços de morango com calda de chocolate e chantily</h6>
                                                 </div>
                                             </article>
                                         </div>
                                         <div class="col-xs-12 col-sm-6 col-md-4 cs-section-item margin-bottom">
                                             <article class="cs-module w-12">
                                                 <div class="imagem">
-                                                    <img src="./img/bolo1.jpg" style="height: 175px; width: 250px"/>
+                                                    <img src="./img/bolo12.jpg" style="height: 175px; width: 250px"/>
                                                 </div>
                                                 <div class="descricao">
                                                     <h4>
-                                                        <a href="#">Descrição I</a>
+                                                        <a href="#">Bolo Cremoso de Milho</a>
                                                     </h4> 
-                                                    <h6>Subdescricao</h6>
+                                                    <h6>Bolo de milho com queijo cremoso e coco ralado sem leite e açúcar </h6>
                                                 </div>
                                             </article>
                                         </div>
@@ -240,7 +246,7 @@
                                                     <h4>
                                                         <a href="#">Bolo de Chocolate com Brigadeiro</a>
                                                     </h4> 
-                                                    <h6>Subdescricao</h6>
+                                                    <h6>Bolo de chocolate com cobertura de chocolate cremoso e granulado de chocolate</h6>
                                                 </div>
                                             </article>
                                         </div>
@@ -253,7 +259,7 @@
                                                     <h4>
                                                         <a href="#">Bolo de Maracujá</a>
                                                     </h4> 
-                                                    <h6>Subdescricao</h6>
+                                                    <h6>Bolo branco com calda sabor maracujá</h6>
                                                 </div>
                                             </article>
                                         </div>
@@ -264,6 +270,7 @@
                     </article>
                 </div>
             </div>
+            <br>
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 col-sm-12">
 
@@ -397,6 +404,7 @@
                 </div>
             </div>
         </div>
+
         <br>
         <footer>
             <p style="bottom: -10px;"><center>Copyright &copy; 2017 - Senac TADS</center>
@@ -418,6 +426,6 @@
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
-        
+
     </body>
 </html>
